@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <title>Weather App Using AngularJs</title>
+  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/zerogrid.css">
+ <script src="js/angular.js"></script>
+ <script src="js/weatherApp.js"></script>
+ <script src="js/weatherController.js"></script>
+</head>
+
+<body>
+
+ <div ng-app="weatherApp" ng-controller="weatherController">
+  <div class="zerogrid">
+   <div class="col-full hdr">
+    <div class="wrap-col">
+     <h1>Weather App</h1>
+    </div>
+   </div>
+  <div class="col-full">
+   <div class="wrap-col">
+    <form ng-submit="submit()">
+    <input type="text" class="input" placeholder="Enter your city e.g. Bangalore" ng-model="location">
+    </form>
+   </div>
+  </div>
+
+  <div class="col-full">
+   <div class="wrap-col ld">
+    <div ng-show="loader == 1" class="loader"><img src="img/ajax-loader.gif" alt=" ">
+    </div>
+   </div>
+  </div>
+
+  <div ng-show="weather.cod == 200">
+   <div class="col-full hdr1">
+    <div class="wrap-col">
+      <h2>
+       {{weather.city.name}}, {{weather.city.country}}
+      </h2>
+	   <weather-icon cloudiness="{{ weather.clouds }}"></weather-icon>
+    <h3>Current: {{ weather.list[0].temp.day | temp:2 }}</h3>
+    min: {{ weather.list[0].temp.min | temp }}, max: {{ weather.list[0].temp.max | temp }}<br />
+	{{ weather.list[0].weather[0].description}}
+    </div>
+   </div>
+ </body>
+</html>

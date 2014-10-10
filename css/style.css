@@ -1,0 +1,29 @@
+
+h1 {
+   font-size: 28px;
+   font-weight: bold;
+   color: #604C4C;
+}
+
+h2 {
+  font-size: 24px;
+  color: #494949;
+}
+
+.input {
+ height: 30px;
+ width: 250px;
+}
+.hdr {
+ margin-top: 10%;
+}
+
+.hdr1 {
+ margin-top: 5%;
+}
+
+.ld {
+  padding: 10px 0 0 50px;
+  text-align: left;
+}
+
