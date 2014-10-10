@@ -1,7 +1,9 @@
 Weather App
 ============
 
-Weather App Using AngularJs  
+Weather App Using AngularJs.By using this App we can search weather details for any location.
+We are using openweathermap api for finding weather details
+refer :http://api.openweathermap.org/
 
 
 ### Prerequisites
