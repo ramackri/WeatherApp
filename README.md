@@ -15,12 +15,12 @@ Clone the WeatherApp repository using [git](http://git-scm.com/):
 
 ```
 git clone https://github.com/ramackri/WeatherApp
-cd ng-weather
+cd WeatherApp
 ```
 
 ## Directory Layout
 
-    WeatherAppUsingAngularJs/          --> all of the files to be used in development
+    WeatherApp/          --> all of the files to be used in development
       js/         --> JavaScript files
       css/   -->   Css files for Html Template
       weatherapp.html  --> weather application Home page
